@@ -141,7 +141,7 @@ alias cl='clear'
 alias gz='tar -zcvf'
 
 # Ruby
-alias c='rails c' # Rails 3
+# alias c='rails c' # Rails 3
 alias co='script/console' # Rails 2
 alias cod='script/console --debugger'
 
