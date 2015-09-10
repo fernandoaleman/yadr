@@ -25,3 +25,16 @@ nnoremap <C-l> <C-w>l
 let NERDTreeShowHidden=1          " always show hidden files
 let NERDTreeIgnore = ['\.git[[dir]]', '\.sass-cache[[dir]]', '\.DS_Store', '\.swp', '\.ruby-gemset', '\.idea']
 nnoremap <leader>d :NERDTreeToggle<CR>
+
+" Set relativenumber
+set relativenumber
+
+" Auto wrap git commits at 72 chars
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" Vim git gutter
+Plugin 'airblade/vim-gitgutter'
+let g:gitgutter_enabled = 0 " Turn off git gutter by default
+
+" Switch to last file
+nnoremap <leader><leader>a <c-^>
